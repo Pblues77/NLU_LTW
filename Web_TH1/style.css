@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #A9A9A9;
+    padding-bottom: 30px;
+}
+
+footer {
+    background-color: #A9A9A9;
+    padding: 2px;
+    text-align: center;
+}
+article {
+    height: 200px;
+    border: 2px solid  gray;
+}
+nav {
+    float: left;
+    width: 15%;
+    height: 200px;
+    background-color: #F0E68C;
+    border: 2px solid  gray;
+}
