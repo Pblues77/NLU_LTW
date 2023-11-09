@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giải PT bậc 2</title>
+    <style>
+        body {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .container .coefficient_box input {
+            font-size: 20px;
+            border: black dashed 2px;
+            outline: none;
+        }
+
+        .container .coefficient_box p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        button {
+            width: 60px;
+            height: 40px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>PT: ax<sup>2</sup> + bx + c = 0</h1>
+<div class="container">
+    <div class="coefficient_box">
+        <p>a</p>
+        <input type="number" id="a">
+    </div>
+    <div class="coefficient_box">
+        <p>b</p>
+        <input type="number" id="b">
+    </div>
+    <div class="coefficient_box">
+        <p>c</p>
+        <input type="number" id="c">
+    </div>
+
+    <button type="submit" onclick="solve()">Giải</button>
+    <p style="font-weight: bold; font-size: 30px" id="result"></p>
+
+    <script>
+        function solve() {
+            var a = document.getElementById("a").value;
+            var b = document.getElementById("b").value;
+            var c = document.getElementById("c").value;
+
+            var lambda = b * b - 4 * a * c;
+            if (lambda < 0)
+                document.getElementById("result").innerHTML = lambda + "PT vô nghiệm";
+            else if (lambda === 0) {
+                var x = -b / (2 * a);
+                document.getElementById("result").innerHTML = "x= " + x;
+            } else {
+                var x1 = (-b + Math.sqrt(lambda))/(2*a);
+                var x2 = (-b - Math.sqrt(lambda))/(2*a);
+
+                document.getElementById("result").innerHTML = "x1= "+x1 +"<br> x2= "+x2;
+            }
+        }
+    </script>
+</div>
+</body>
+</html>

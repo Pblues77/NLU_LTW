@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.one-third{
+    padding-left: 10%;
+    float: left;
+}
+.two-thirds{
+    float: right;
+    padding-right: 10%;
+}
+.two-thirds .htext_style{
+    float:left;
+    margin: 10px;
+    color: #B3B3B3;
+}
+.container .column{
+    margin: 10px;
+}

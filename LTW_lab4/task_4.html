@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 4</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            text-align: center;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            backdrop-filter: blur(20px);
+        }
+
+        .container {
+            border: aqua solid 2px;
+            background-color: white;
+            width: 400px;
+            height: 600px;
+        }
+
+        .container textarea {
+            width: 98%;
+            height: 60%;
+            border: none;
+            border-bottom: aqua solid 2px;
+            outline: none;
+            font-size: 20px;
+        }
+
+        .container p {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .container input {
+            width: 98%;
+            font-size: 20px;
+            padding: 10px 0;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .container button {
+            width: 30%;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <textarea id="paragraph" placeholder="Hãy nhập một đoạn văn"></textarea>
+
+    <p>Tìm kiếm số lần xuất hiện trong đoạn văn trên</p>
+
+    <input id="textLine" placeholder="Hãy nhập một dòng">
+    <button onclick="countOccurrences(document.getElementById('paragraph').value,document.getElementById('textLine').value)">Tìm</button>
+    <p id="result"></p>
+</div>
+
+<script>
+    function countOccurrences(paragraph, textLine){
+        let p = String(paragraph);
+        let tl = String(textLine);
+        let count = p.split(tl).length-1;
+        document.getElementById("result").innerHTML = "Số lần xuất hiện: "+count;
+    }
+</script>
+</body>
+</html>

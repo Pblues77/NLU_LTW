@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form 3</title>
+    <link rel="stylesheet" href="css/task_form_3_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+<div class="container">
+    <form action="" class="form_3">
+        <div class="input_group">
+            <h4>Account</h4>
+            <div class="input_box">
+                <i class="fa-solid fa-user" style="color: #777b83;"></i>
+                <input type="text" placeholder="Full Name">
+            </div>
+            <div class="input_box">
+                <i class="fa-solid fa-envelope" style="color: #777b83;"></i>
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input_box">
+                <i class="fa-solid fa-key" style="color: #777b83;"></i>
+                <input type="password" placeholder="Password">
+            </div>
+        </div>
+
+        <div class="dob_gender_input_group">
+            <div class="dob_input_group">
+                <h4>Date of Birth</h4>
+                <div class="date_input_box">
+                    <input type="text" placeholder="DD" class="input_date">
+                    <input type="text" placeholder="MM" class="input_date">
+                    <input type="text" placeholder="YYYY" class="input_date">
+                </div>
+            </div>
+
+            <div class="gender_input_group">
+                <h4>Gender</h4>
+                <div class="radio_input_box">
+                    <div class="gender_radio">
+                        <input type="radio" id="male" name="gender" placeholder="Male" value="male">
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="gender_radio">
+                        <input type="radio" id="female" name="gender" placeholder="Female" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="payment_block">
+            <h4>Payment Details</h4>
+            <div class="payment_radio_input">
+                <div class="payment_radio_box">
+                    <input type="radio" id="credit_card" name="payment" value="Credit Card">
+                    <label for="credit_card">Credit Card</label>
+                </div>
+                <div class="payment_radio_box">
+                    <input type="radio" id="paypal" name="payment" value="Paypal">
+                    <label for="paypal">Paypal</label>
+                </div>
+            </div>
+            <div class="input_box">
+                <i class="fa-regular fa-credit-card" style="color: #777b83;"></i>
+                <input type="text" placeholder="Card Number">
+            </div>
+            <div class="card_date">
+                <div class="input_box">
+                    <i class="fa-solid fa-user" style="color: #777b83;"></i>
+                    <input type="text" placeholder="Card CVC">
+                </div>
+                <input type="date" class="date_input">
+            </div>
+        </div>
+
+        <h4>Terms and Conditions</h4>
+        <div class="accept_form">
+            <input type="checkbox" id="accept_input">
+            <label for="accept_input">I accept the terms and conditions for signing up to this service,
+                and here by confirm I have read the privacy policy.
+            </label>
+        </div>
+    </form>
+</div>
+</body>
+</html>

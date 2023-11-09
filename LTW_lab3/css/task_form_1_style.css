@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, Arial, sans-serif;
+
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    border: black solid 1px;
+    text-align: center;
+}
+
+.container .center_content {
+    padding: 10px;
+    background-color: #eeeeee;
+}
+
+.container .center_content .form_1 {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.container .center_content .form_1 h4 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 15px 0;
+}
+
+.container .center_content .form_1 .input_name {
+    background-color: #eeeeee;
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: left;
+    display: block;
+    border: #EDDDED solid 1px;
+}
+
+.container .center_content .form_1 .input_name .input_title {
+    font-size: 10px;
+    margin-left: 3px;
+    font-weight: bold;
+}
+
+.container .center_content .form_1 .input_name input {
+    display: block;
+    border: none;
+    padding: 15px 0;
+    text-align: left;
+    outline: none;
+    background-color: #eeeeee;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+.container .center_content .form_1 .contactInfo {
+    display: flex;
+}
+
+.container .center_content .form_1 .contactInfo #email_input {
+    margin-right: 30px;
+}
+
+.container .center_content .form_1 .input_name select {
+    border: none;
+    outline: none;
+    display: block;
+    background-color: #eeeeee;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.container .form_1 .input_submit {
+    display: flex;
+}
+
+.container .form_1 .input_submit #submit {
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
+.container .form_1 .input_submit #submit i {
+    margin-left: 5px;
+}
+
+.container .center_content .form_1 .input_message {
+    display: block;
+    text-align: left;
+    background-color: white;
+}
+
+.container .center_content .form_1 .input_message textarea {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 110px;
+}
+
+

@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .form_3 h4 {
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #87D630;
+}
+
+input {
+    border: #AEAEAE solid 1px;
+    border-radius: 3px;
+}
+
+.container {
+    border: black solid 1px;
+    padding: 12px 20px 30px;
+    background-color: #E3E3E3;
+    width: 600px;
+}
+
+.container .form_3 {
+    background-color: white;
+    padding: 35px 60px;
+}
+
+.container .form_3 .input_group .input_box {
+    border: #AEAEAE solid 1px;
+    border-radius: 5px;
+    display: flex;
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+.container .form_3 .input_group .input_box i {
+    width: 50px;
+    font-size: 20px;
+    display: flex; /* Sử dụng flexbox để căn giữa các phần tử con */
+    align-items: center; /* Căn các phần tử con theo chiều dọc (vertical centering) */
+    justify-content: center;
+    border-right: #AEAEAE groove 1px;
+}
+
+.container .form_3 .input_group .input_box input {
+    border: none;
+    outline: none;
+    font-size: 20px;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.container .form_3 .dob_gender_input_group {
+    display: flex;
+    width: 100%;
+}
+
+.container .form_3 .dob_gender_input_group .dob_input_group {
+    float: left;
+}
+
+.container .form_3 .dob_gender_input_group .dob_input_group .input_date {
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.container .form_3 .dob_gender_input_group .dob_input_group .input_date {
+    width: 40px;
+    height: 25px;
+}
+
+.container .form_3 .dob_gender_input_group .gender_input_group {
+    margin-left: 90px;
+}
+
+.container .form_3 .dob_gender_input_group .gender_input_group .radio_input_box {
+    border: #AEAEAE solid 1px;
+    border-radius: 3px;
+}
+
+.container .form_3 .dob_gender_input_group .gender_input_group .radio_input_box .gender_radio {
+    display: inline-flex;
+    height: 25px;
+    width: 100px;
+    border-right: #AEAEAE solid 1px;
+}
+
+.container .form_3 .dob_gender_input_group .gender_input_group .radio_input_box .gender_radio input {
+    /*visibility: hidden;*/
+    display: none;
+}
+
+.container .form_3 .dob_gender_input_group .gender_input_group .radio_input_box .gender_radio label {
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .form_3 .payment_block .payment_radio_input {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.container .form_3 .payment_block .payment_radio_input .payment_radio_box {
+    width: 100%;
+    font-size: 30px;
+    border: #AEAEAE solid 1px;
+    text-align: center;
+}
+
+.container .form_3 .payment_block .payment_radio_input .payment_radio_box label {
+    cursor: pointer;
+}
+
+.container .form_3 .payment_block .payment_radio_input .payment_radio_box input {
+    visibility: hidden;
+}
+
+.container .form_3 .payment_block .payment_radio_input .payment_radio_box input:checked + label {
+    background-color: #87D630;
+}
+
+.container .form_3 .payment_block .input_box {
+    border: #AEAEAE groove 1px;
+    border-radius: 5px;
+    display: flex;
+    margin: 20px 0;
+}
+.container .form_3 .payment_block .input_box i {
+    width: 50px;
+    font-size: 20px;
+    display: flex; /* Sử dụng flexbox để căn giữa các phần tử con */
+    align-items: center; /* Căn các phần tử con theo chiều dọc (vertical centering) */
+    justify-content: center;
+    border-right: #AEAEAE groove 1px;
+}
+.container .form_3 .payment_block .input_box input {
+    border: none;
+    outline: none;
+    font-size: 20px;
+    width: 100%;
+    padding-left: 20px;
+}
+.container .form_3 .payment_block .card_date{
+    display: flex;
+    align-items: center; /* Căn các phần tử con theo chiều dọc (vertical centering) */
+}
+.container .form_3 .payment_block .date_input{
+    width: 50%;
+    height: 100%;
+    font-size: 20px;
+}
+/*
+*/
+.container .form_3 .accept_form input {
+    float: left;
+}

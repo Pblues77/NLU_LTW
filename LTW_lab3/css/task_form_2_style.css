@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url("../media/bg.png") no-repeat center;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    background-color: #F1F1F1;
+    border-radius: 15px;
+    text-align: center;
+}
+.container .form_2{
+    margin: 10px;
+}
+.container .title{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 30px;
+    margin-top: 20px;
+    color: #4F2757;
+}
+.container .input_info input{
+    display: inline-block;
+    margin: 15px 0;
+    width: 70%;
+    height: 70px;
+    border-radius:20px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding-left: 20px;
+    box-shadow: 5px 5px 20px #ede6e6,-5px -5px 20px #ede6e6,-5px 5px 20px #ede6e6,5px -5px 20px #ede6e6;
+    cursor: pointer;
+}
+.container .input_info input::placeholder{
+    color: #4F2757;
+    font-weight: bold;
+}
+.container #signin_bt {
+    background-color: #BD59D7;
+    width: 35%;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    box-shadow: 0px 10px 40px #BD59D7;
+    cursor: pointer;
+}
+.container .other_login p{
+    color: #AEAEAE;
+    font-size: 1.2em;
+    margin-bottom: 25px;
+}
+.container .other_login .other_list{
+    margin-bottom: 110px;
+}
+
+.container .other_login .other_list img{
+    width: 30px;
+    height: 30px;
+}
+.container .other_login .other_list button{
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+.container #sign_up{
+    color: #4F2757;
+    font-weight: bold;
+    text-decoration: none;
+}
